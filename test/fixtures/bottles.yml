@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bin: 1
+  wine: MyString
+  winery: MyString
+  stylee: MyString
+  mainvarietal: MyString
+  appellation: MyString
+  subregion: MyString
+  mainregion: MyString
+  country: MyString
+  vintage: 1
+  price: 1.5
+  secondvarietal: MyString
+  thirdvarietal: MyString
+  rp: MyString
+  ws: MyString
+  cases: 1
+  alcohol: 1
+  profile: MyText
+
+two:
+  bin: 1
+  wine: MyString
+  winery: MyString
+  stylee: MyString
+  mainvarietal: MyString
+  appellation: MyString
+  subregion: MyString
+  mainregion: MyString
+  country: MyString
+  vintage: 1
+  price: 1.5
+  secondvarietal: MyString
+  thirdvarietal: MyString
+  rp: MyString
+  ws: MyString
+  cases: 1
+  alcohol: 1
+  profile: MyText

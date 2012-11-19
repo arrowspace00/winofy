@@ -1,0 +1,57 @@
+<h1>Listing bottles</h1>
+
+<table>
+  <tr>
+    <th>Bin</th>
+    <th>Wine</th>
+    <th>Winery</th>
+    <th>Stylee</th>
+    <th>Mainvarietal</th>
+    <th>Appellation</th>
+    <th>Subregion</th>
+    <th>Mainregion</th>
+    <th>Country</th>
+    <th>Vintage</th>
+    <th>Price</th>
+    <th>Secondvarietal</th>
+    <th>Thirdvarietal</th>
+    <th>Rp</th>
+    <th>Ws</th>
+    <th>Cases</th>
+    <th>Alcohol</th>
+    <th>Profile</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bottles.each do |bottle| %>
+  <tr>
+    <td><%= bottle.bin %></td>
+    <td><%= bottle.wine %></td>
+    <td><%= bottle.winery %></td>
+    <td><%= bottle.stylee %></td>
+    <td><%= bottle.mainvarietal %></td>
+    <td><%= bottle.appellation %></td>
+    <td><%= bottle.subregion %></td>
+    <td><%= bottle.mainregion %></td>
+    <td><%= bottle.country %></td>
+    <td><%= bottle.vintage %></td>
+    <td><%= bottle.price %></td>
+    <td><%= bottle.secondvarietal %></td>
+    <td><%= bottle.thirdvarietal %></td>
+    <td><%= bottle.rp %></td>
+    <td><%= bottle.ws %></td>
+    <td><%= bottle.cases %></td>
+    <td><%= bottle.alcohol %></td>
+    <td><%= bottle.profile %></td>
+    <td><%= link_to 'Show', bottle %></td>
+    <td><%= link_to 'Edit', edit_bottle_path(bottle) %></td>
+    <td><%= link_to 'Destroy', bottle, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bottle', new_bottle_path %>

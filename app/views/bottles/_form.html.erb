@@ -1,0 +1,89 @@
+<%= form_for(@bottle) do |f| %>
+  <% if @bottle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bottle.errors.count, "error") %> prohibited this bottle from being saved:</h2>
+
+      <ul>
+      <% @bottle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bin %><br />
+    <%= f.number_field :bin %>
+  </div>
+  <div class="field">
+    <%= f.label :wine %><br />
+    <%= f.text_field :wine %>
+  </div>
+  <div class="field">
+    <%= f.label :winery %><br />
+    <%= f.text_field :winery %>
+  </div>
+  <div class="field">
+    <%= f.label :stylee %><br />
+    <%= f.text_field :stylee %>
+  </div>
+  <div class="field">
+    <%= f.label :mainvarietal %><br />
+    <%= f.text_field :mainvarietal %>
+  </div>
+  <div class="field">
+    <%= f.label :appellation %><br />
+    <%= f.text_field :appellation %>
+  </div>
+  <div class="field">
+    <%= f.label :subregion %><br />
+    <%= f.text_field :subregion %>
+  </div>
+  <div class="field">
+    <%= f.label :mainregion %><br />
+    <%= f.text_field :mainregion %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :vintage %><br />
+    <%= f.number_field :vintage %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :secondvarietal %><br />
+    <%= f.text_field :secondvarietal %>
+  </div>
+  <div class="field">
+    <%= f.label :thirdvarietal %><br />
+    <%= f.text_field :thirdvarietal %>
+  </div>
+  <div class="field">
+    <%= f.label :rp %><br />
+    <%= f.text_field :rp %>
+  </div>
+  <div class="field">
+    <%= f.label :ws %><br />
+    <%= f.text_field :ws %>
+  </div>
+  <div class="field">
+    <%= f.label :cases %><br />
+    <%= f.number_field :cases %>
+  </div>
+  <div class="field">
+    <%= f.label :alcohol %><br />
+    <%= f.number_field :alcohol %>
+  </div>
+  <div class="field">
+    <%= f.label :profile %><br />
+    <%= f.text_area :profile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
